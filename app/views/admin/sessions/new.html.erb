@@ -1,0 +1,28 @@
+
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+<div class="main">
+        <p class="surround">管理者ログイン</p>
+        
+        <div class="letter1">
+          <%= f.label :メールアドレス %>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+        
+        <div class="letter2">
+          <%= f.label :パスワード %>
+          <%= f.password_field :encrypted_password, autocomplete: "current-password" %>
+        </div>
+
+        <div class="letter3">
+          <%= f.submit "ログイン" %>
+        </div>
+    </div>
+    <% end %>
+
+
+
+  
+
+  

@@ -1,0 +1,52 @@
+.main {
+    width: 90%;
+    height: 500px;
+    margin: 0 30px 0;
+    border: 1px solid black;
+    
+  }
+
+ .surround {
+   margin: 40px 90px;
+   padding: 0px 50px 0px;
+   display :inline-block;
+   border: solid 4px gray;
+ }
+
+ .letter1 {
+   margin: 0 350px;
+   padding: 30px 30px 30px 60px;
+   display: inline-block;
+ }
+
+ .letter2 {
+  margin: 0 320px;
+  padding: 0 90px 0;
+  display: inline-block;
+
+ }
+
+ .letter3{
+  margin: 50px 508px 50px;
+ }
+
+ label{
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+ }
+ 
+ .box{
+   display: inline-block;
+   border: solid 4px blueviolet;
+
+ }
+
+ .footer{
+    width: 90%;
+    height: 100px;
+    margin: 0 30px 0;
+    border: 1px solid black;
+  }
+
+ 
