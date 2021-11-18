@@ -1,6 +1,6 @@
 
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= form_with model: @admin, url: customer_session_path, local: true do |f| %>
 
 <div class="main">
         <p class="surround">管理者ログイン</p>
@@ -12,7 +12,7 @@
         
         <div class="letter2">
           <%= f.label :パスワード %>
-          <%= f.password_field :encrypted_password, autocomplete: "current-password" %>
+          <%= f.password_field :password, autocomplete: "current-password" %>
         </div>
 
         <div class="letter3">

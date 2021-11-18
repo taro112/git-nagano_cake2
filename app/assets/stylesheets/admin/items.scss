@@ -1,10 +1,9 @@
 // Place all the styles related to the admin::items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.main {
+.head {
     width: 90%;
-    height: 500px;
-    margin: 0 30px 0;
+    height: 100px;
     border: 1px solid black;
     
   }
@@ -14,4 +13,37 @@
    padding: 0px 50px 0px;
    display :inline-block;
    border: solid 4px gray;
+ }
+
+ .main{
+     width: 90%;
+     height: 500px;
+     background-color: aqua;
+     border: 1px solid black;
+     
+ }
+
+ .image{
+     display: inline-block;
+ }
+
+ .letter{
+    width: 120px;
+        padding-left: 50px;
+        margin-left: 250px;
+        display: inline-block;
+ }
+
+ .file{
+     margin-left: 60px;
+     display: inline-block;
+ }
+
+ .button{
+     margin: 20px;
+     display: inline-block;
+ }
+
+ .register{
+     margin-left: 80px;
  }

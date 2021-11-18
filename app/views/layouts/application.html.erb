@@ -28,11 +28,21 @@
 
         <nav>
             <ul class="nav-list">
-                <li class="nav-list-item">商品一覧</li>
-                <li class="nav-list-item">会員一覧</li>
-                <li class="nav-list-item">注文履歴一覧</li>
-                <li class="nav-list-item">ジャンル一覧</li>
-                <li class="nav-list-item">ログアウト</li>  
+                <li class="nav-list-item">
+                <%= link_to "商品一覧" , admin_items_path  %>
+                </li>
+                <li class="nav-list-item">
+                <%= link_to "会員一覧" , admin_customers_path  %>
+                </li>
+                <li class="nav-list-item">
+                <%= link_to "注文履歴一覧" , orders_path   %>
+                </li>
+                <li class="nav-list-item">
+                <%= link_to "ジャンル一覧" , admin_genres_path  %>
+                </li>
+                <li class="nav-list-item">
+                <%= link_to "ログアウト" , destroy_admin_session_path, method: :delete  %>
+                </li>
             </ul>
         </nav>
         <h1 class="logo">LOGO</h1>
@@ -42,10 +52,18 @@
 
         <nav>
             <ul class="nav-list">
-                <li class="nav-list-item">About</li>
-                <li class="nav-list-item">商品一覧</li>
-                <li class="nav-list-item">新規登録</li>
-                <li class="nav-list-item">ログイン</li>  
+                <li class="nav-list-item">
+                <%= link_to "About" , about_path %>
+                </li>
+                <li class="nav-list-item">
+                <%= link_to "商品一覧" , items_path  %>
+                </li>
+                <li class="nav-list-item">
+                <%= link_to "新規登録" , new_customer_registration_path  %>
+                </li>
+                <li class="nav-list-item">
+                <%= link_to "ログイン" , new_customer_session_path  %>
+                </li>
             </ul>
         </nav>
         <h1 class="logo">LOGO</h1>
