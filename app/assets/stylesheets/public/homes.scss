@@ -1,3 +1,38 @@
 // Place all the styles related to the public::homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main{
+     width: 90%;
+     height: 500px;
+     text-align: center;
+}
+
+.footer{
+    width: 90%;
+    height: 100px;
+    border: 1px solid black ;
+}
+
+.home{
+    text-align: center;
+}
+
+.title{
+    margin-left: 70px;
+}
+
+.side_by_side{
+    display: table;
+    table-layout: fixed;
+}
+
+.side_by_side_c{
+    display: table-cell;
+}
+
+.side{
+    display: flex;
+    flex-wrap: wrap;
+    
+}

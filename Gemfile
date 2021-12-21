@@ -42,6 +42,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'pry-byebug'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -65,3 +66,12 @@ gem 'devise'
 
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
+
+gem "enum_help"
+
+gem "rails-i18n"
+
+gem 'bootstrap', '~> 4.5'
+gem 'jquery-rails'
+
+gem 'kaminari'

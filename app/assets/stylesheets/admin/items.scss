@@ -12,14 +12,12 @@
    margin: 40px 90px;
    padding: 0px 50px 0px;
    display :inline-block;
-   border: solid 4px gray;
  }
 
  .main{
      width: 90%;
      height: 500px;
-     background-color: aqua;
-     border: 1px solid black;
+    
      
  }
 
@@ -28,7 +26,7 @@
  }
 
  .letter{
-    width: 120px;
+    width: 200px;
         padding-left: 50px;
         margin-left: 250px;
         display: inline-block;
@@ -46,4 +44,27 @@
 
  .register{
      margin-left: 80px;
+ }
+ 
+ .index_table{
+     width: 80%;
+     margin: 0 auto;
+     max-width: 500px;
+ }
+ 
+ .admin_item{
+     text-align: center;
+ }
+ 
+ .title{
+     margin-left: 100px;
+ }
+ 
+ .new{
+     margin-left: 1000px;
+ }
+ 
+ .item_link{
+     margin-top: 30px;
+     margin-left: 600px;
  }

@@ -1,0 +1,27 @@
+<h2>商品一覧</h2>
+
+<div class="container">
+    <div class="row">
+        <div class = "side">
+            
+        
+        <% @items.each do |item| %>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <%= link_to  item_path(item.id) do %>
+            <div class ="step-box">
+            <div class="step-img1"><%= attachment_image_tag item, :image,:fill, 200, 200, fallback: "no_image.jpeg" %></div>
+            <% end %>
+            <h3 class="item_name"><%= item.name %></h3>
+            <p class ="price"><%= item.price %></p>
+            </div>
+　      </div> 
+　      <% end %>
+　      </div>
+　  </div>
+</div>
+
+        
+
+
+<%= paginate @items %>

@@ -1,7 +1,37 @@
-<% @items.each do |item| %>
-<%= item.id %>
-<%= item.name %>
-<%= item.price %>
-<%= item.genre_id %>
-<%= item.is_active %>
-<% end %>
+<h2 class = "title">商品一覧</h2>
+<div class = "new">
+  <%= link_to "+", new_admin_item_path %>
+</div>
+
+<table class="index_table">
+  <thead>
+    <tr>
+      <th>商品ID</th>
+      <th>商品名</th>
+      <th>税抜価額</th>
+      <th>ジャンル</th>
+      <th>ステータス</th>
+    </tr>
+  </thead>
+  <% @items.each do |item| %>
+  <tbody>
+    <tr>
+      <th><%= item.id %></th>
+      <td><%= link_to item.name, admin_item_path(item.id) %>
+      </td>
+      <td><%= item.price %></td>
+      <td><%= item.genre.name %></td>
+      <td><% if item.is_active == true %>
+          <p>販売中</p>
+          <% else %>
+          <p>販売停止中</p>
+           <% end %>
+      </td>
+      
+      <% end %>
+    </tr>
+  </tbody>
+</table>
+<div class = "item_link">
+  <%= paginate @items %>
+</div>

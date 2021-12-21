@@ -1,0 +1,43 @@
+<p class = "home">ようこそ、ながのCAKEへ！</p>
+<p class = "home">このサイトは、ケーキの販売のECサイトになります。</p>
+<p class = "home">会員ではない方も商品の閲覧はできますが、</p>
+<p class = "home">購入には会員登録が必要になります。</p>
+
+<div class = "new_item">
+    <h2 class = "title">新着商品</h2>
+</div>
+
+ 
+ 
+    <div class = "side">
+    <% @items.each do |item| %>
+            
+        <table class ="side_by_side">
+         <tbody>
+                <tr>
+                    <th class = "side_by_side_c">
+                    <%= link_to  item_path(item.id) do %>
+                        <%= attachment_image_tag item, :image,:fill, 200, 200 %>
+                    <% end %>
+                    </th>
+                 </tr>
+                 <tr>
+                     <th class = "side_by_side_c"><%= item.name %></th>
+                 </tr>
+                 <tr>
+                     <th class ="side_by_side_c"><%= item.price %></th>
+                 </tr>
+         </tbody>
+          
+        </table>
+     <% end %>
+    </div>
+ 
+ 
+ 
+ <div>
+     <%= link_to "全ての商品を見る", items_path %>
+ </div>
+ 
+ 
+ 
